@@ -1,5 +1,6 @@
 package poc.testes.unitarios.projetoTestes.service;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +17,7 @@ class SomaServiceTest {
     private SomaService somaService;
 
     @Test
+    @DisplayName("DEVE realizar a soma dos valores a e b")
     void testRealizaSomaDoisElementos() {
         int a = 2;
         int b = 3;
